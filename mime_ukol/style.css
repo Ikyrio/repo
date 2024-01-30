@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'QuicksandBold';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/quicksand/v31/6xK-dSZaM9iE8KbpRA_LJ3z8mH9BOJvgkP8o58i-wjwxUD2GF9Zc.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+.overall-wrapper{
+    --main-text-color: #2E3D80;
+    --cart-number-color: #FA5F5F;
+}
+
+
+[data-testid="linkWebsiteLogo"]{
+    float: left;
+}
+
+[data-testid="linkWebsiteLogo"] img{
+    height: 60px;
+}
+
+.top-nav{
+    display:none;
+}
+
+.top-nav .subnav-right{
+    display: initial;
+    border: solid 2px #2E3D80;
+}
+
+
+.menu-helper::after{
+    display:none;
+}
+
+
+/*navigation-in*/
+.navigation-wrapper a.btn-icon::before{
+    content: url('https://635902.myshoptet.com/user/documents/upload/shopping-bag1.png');
+}
+
+/*
+body{
+	font-family: "Quicksand", sans-serif;
+}
+*/
+
+#content .category-title, #content .subcategories li a{
+    text-transform: inherit;
+}
+
+#content .category-title{
+    margin-top: 0;
+    padding: 0.5em 0 0 0;
+    color: var(--main-text-color);
+
+    font-family: "QuicksandBold", sans-serif;
+}
+
+#content .subcategories li{
+
+}
+
+#content .subcategories li .text{
+    background-color: #FFFFFF;
+    color: var(--main-text-color);
+    border: solid 2px var(--main-text-color);
+    border-radius: 5px;
+    padding: 1em;
+    width: 16em;
+}
+
+#content .subcategories .image{
+    display: none;
+}
+
+.content-wrapper-in .category-top, .breadcrumbs{
+    background-color: #FFF3F3;
+}
+
+.breadcrumbs{
+    margin: 0 20px;
+    padding: 0;
+}
+
+.category-top .subcategories a img{
+    display:none;
+}
+
+.category-header, .filters-unveil-button-wrapper{
+    display: none;
+}
+
+.subnav-left, a.project-phone{
+    display:none;
+}
+
+#header .cart-price{
+    opacity: 0;
+}
+
+#header #navigation{
+    height: 6em;
+    margin-top: 0.5em;
+
+}
+
+.overall-wrapper #header .site-name{
+    padding-bottom: 0;
+}
+
+.navigation-wrapper a[data-target=cart] i{
+    border-radius: 100%;
+    bottom: auto;
+    display: block;
+    font-size: 13px;
+    font-style: normal;
+    height: 23px;
+    left: 0;
+    line-height: 10px;
+    padding: 5px;
+    position: absolute;
+    right: auto;
+    top: 40px;
+    width: 23px;
+}
+
+.navigation-wrapper a[data-target=cart] i{
+    background-color: var(--cart-number-color);
+    color: #fff;
+}
+
+a[data-target=cart] {
+    position: absolute;
+    right: 3em;
+    top: 1em;
+}
