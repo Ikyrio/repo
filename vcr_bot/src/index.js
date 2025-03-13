@@ -74,7 +74,7 @@ client.on(Events.VoiceStateUpdate, async (oldState, newState) => {
 
     //const filter = (i) => i.user.id === message.author.id;
 
-    const BUTTON_MESSAGE = {content:'Set voiceroom limit.', components: [buttonRow]};
+    const BUTTON_MESSAGE = {content:'Set voice room limit.', components: [buttonRow]};
 
 
     if(newState.channelId === null) {
@@ -91,7 +91,7 @@ client.on(Events.VoiceStateUpdate, async (oldState, newState) => {
                         await msg.delete().catch(err => console.error(err));
                     }
                 }catch (err) {
-                    console.error(`❌ Error in channel ${oldState.channel.name}:`, err);
+                    console.error(`Error in channel ${oldState.channel.name}:`, err);
                 }
 
             }
